@@ -24,9 +24,9 @@ public class App {
 		if(select ==0) {
 			return new Rectangle(10,20);
 		}else if(select ==1) {
-			return new Circle(10,20,30);
+			return new Circle(10);
 		}else {
-			return null;
+			return new Square(10,20,30);
 		}
 	}
 
