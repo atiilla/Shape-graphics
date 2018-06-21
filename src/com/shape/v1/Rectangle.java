@@ -17,7 +17,7 @@ public class Rectangle extends Shape {
 	}
 
 	public Rectangle() {
-		this(0, 0, 0, 0);
+		this(0, 0);
 	}
 
 	public Rectangle(int width, int height) {
