@@ -11,34 +11,35 @@ public class Circle extends Shape {
 		ANGLES = 0;
 	}
 
-	
-
 	public Circle() {
-		
+		this(0);
 	}
 
 	public Circle(int radius) {
-
+		this(radius, 0, 0);
 	}
 
 	public Circle(int radius, int x, int y) {
-
+		super(x, y);
+		this.radius = radius;
+		count++;
 	}
 
-	public Circle(Circle c) {
-
+	public Circle(Circle circle) {
+		this(circle.radius, circle.getX(), circle.getY());
 	}
 
 	public int getRadius() {
-		return 0;
+		return radius;
 	}
+	
 
 	public double getArea() {
-		return 0;
+		return radius * radius*3.14;
 	}
 
 	public double getPerimeter() {
-		return 0;
+		return (radius + radius*3.14);
 	}
 
 	public static int getCount() {
@@ -47,7 +48,7 @@ public class Circle extends Shape {
 	}
 
 	public void setRadius(int radius) {
-
+		this.radius = radius;
 	}
 
 }
