@@ -1,6 +1,6 @@
 package com.shape.v1;
 
-public abstract class Shape {
+public abstract class Shape extends Object{
 	   private int x;
 	   private int y;
 	   private static int count = 0;
