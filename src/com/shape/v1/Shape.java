@@ -45,6 +45,20 @@ public abstract class Shape extends Object{
 	   public static int getCount() {
 	      return count;
 	   }
+	   
+	   @Override
+	   public boolean equals(Object shape) {
+		   if(shape==null) {
+			   return false;
+		   }
+		if(shape instanceof Shape) {
+			if(((Shape)shape).x==x && ((Shape)shape).y==y){
+				   return true;
+			   }
+			
+		}
+		return false; 
+	   }
 
 	   public abstract double getArea();
 
