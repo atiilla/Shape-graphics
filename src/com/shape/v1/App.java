@@ -13,9 +13,20 @@ public class App {
 		System.out.println(shape.getArea());
 		
 		Shape shape1 = getRandomShape();
-		
+		Shape shape2 = App.getRandomShape();
 		
 		System.out.println(shape1.getArea());
+		
+		
+		if(shape2 instanceof Square) {
+			System.out.println("square");
+		}
+		if(shape2 instanceof Rectangle) {
+			System.out.println("Rectangle");
+		}
+		if(shape2 instanceof Circle) {
+			System.out.println("Circle");
+		}
 
 	}
 	private static Shape getRandomShape() {
@@ -28,6 +39,9 @@ public class App {
 		}else {
 			return new Square(10,20,30);
 		}
+		
+		
 	}
+	
 
 }

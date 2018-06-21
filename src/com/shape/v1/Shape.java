@@ -46,6 +46,9 @@ public abstract class Shape extends Object{
 	      return count;
 	   }
 	   
+	   
+	   
+	   
 	   @Override
 	   public boolean equals(Object shape) {
 		   if(shape==null) {
