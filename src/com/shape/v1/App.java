@@ -15,7 +15,7 @@ public class App {
 		Shape shape1 = getRandomShape();
 		
 		
-		
+		System.out.println(shape1.getArea());
 
 	}
 	private static Shape getRandomShape() {
