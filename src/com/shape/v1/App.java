@@ -28,6 +28,9 @@ public class App {
 			System.out.println("Circle: " +  s1.getArea());
 		}
 		
+		IsoScelesTriangle iso = new IsoScelesTriangle(56,7,9,0);
+		System.out.println(iso.toString());
+		
 		System.out.println(shape.hashCode());
 	}
 	
