@@ -67,6 +67,7 @@ public class Rectangle extends Shape {
 		setHeight(factor*height/100);
 		setWidth(factor*width/100);
 		
+		
 	}
 
 	public double getArea() {
@@ -79,6 +80,16 @@ public class Rectangle extends Shape {
 
 	public static int getCount() {
 		return count;
+	}
+	
+	@Override
+	public String toString() {
+
+		return "[Rectangle with x: " + getX() 
+							+ " y: " + getY() 
+							+ " height: " + getHeight() 
+							+ " width: " + getWidth()
+							+ "]";
 	}
 
 }
