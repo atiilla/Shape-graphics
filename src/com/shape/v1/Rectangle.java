@@ -62,6 +62,12 @@ public class Rectangle extends Shape {
 		setHeight(height+d);
 		setWidth(width+d);
 	}
+	
+	public void scale(int factor) {
+		setHeight(factor*height/100);
+		setWidth(factor*width/100);
+		
+	}
 
 	public double getArea() {
 		return width * height;

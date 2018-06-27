@@ -1,6 +1,6 @@
 package com.shape.v1;
 
-public abstract class Shape extends Object{
+public abstract class Shape implements Scaleable{
 	   private int x;
 	   private int y;
 	   private static int count = 0;

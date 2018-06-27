@@ -19,21 +19,39 @@ public class App {
 		System.out.println(shape1.getArea());
 
 		if (shape2 instanceof Square) {
-			System.out.println("Square: " +  s2.getArea());
-			
-		}else if (shape2 instanceof Rectangle) {
-			System.out.println("Rectangle: " +  s.getArea());
+			System.out.println("Square: " + s2.getArea());
+
+		} else if (shape2 instanceof Rectangle) {
+			System.out.println("Rectangle: " + s.getArea());
+		} else if (shape2 instanceof Circle) {
+			System.out.println("Circle: " + s1.getArea());
 		}
-		else  if(shape2 instanceof Circle) {
-			System.out.println("Circle: " +  s1.getArea());
-		}
-		
-		IsoScelesTriangle iso = new IsoScelesTriangle(56,7,9,0);
+
+		IsoScelesTriangle iso = new IsoScelesTriangle(56, 7, 9, 0);
 		System.out.println(iso.toString());
-		
+
 		System.out.println(shape.hashCode());
+		
+		Drawing drawing = new Drawing();
+		drawing.printShapes();
+		for (int i = 0; i < 100; i++) {
+			
+		}
+		
 	}
-	
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null)
+			return false;
+		if (!(obj instanceof Shape))
+			return false;
+		if (obj == this)
+			return true;
+		System.out.println(obj.hashCode());
+		return this.getRandomShape() == obj;
+	}
+
 	private static Shape getRandomShape() {
 		Random number = new Random();
 		int select = number.nextInt(3);

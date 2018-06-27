@@ -33,6 +33,11 @@ public class Circle extends Shape {
 		return radius;
 	}
 	
+	public void scale(int factor) {
+		setRadius(factor*radius/100);
+		
+	}
+	
 
 	public double getArea() {
 		return radius * radius*3.14;

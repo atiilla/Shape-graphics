@@ -66,6 +66,12 @@ public class Triangle extends Shape {
 	public static int getCount() {
 		return count;
 	}
+	
+	public void scale(int factor) {
+		setHeight(factor*height/100);
+		setWidth(factor*width/100);
+		
+	}
 
 	@Override
 	public String toString() {
