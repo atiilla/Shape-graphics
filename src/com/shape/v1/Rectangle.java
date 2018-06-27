@@ -59,15 +59,14 @@ public class Rectangle extends Shape {
 	}
 
 	public void grow(int d) {
-		setHeight(height+d);
-		setWidth(width+d);
+		setHeight(height + d);
+		setWidth(width + d);
 	}
-	
+
 	public void scale(int factor) {
-		setHeight(factor*height/100);
-		setWidth(factor*width/100);
-		
-		
+		setHeight(factor * height / 100);
+		setWidth(factor * width / 100);
+
 	}
 
 	public double getArea() {
@@ -75,21 +74,18 @@ public class Rectangle extends Shape {
 	}
 
 	public double getPerimeter() {
-		return (2*width) + (2*height);
+		return (2 * width) + (2 * height);
 	}
 
 	public static int getCount() {
 		return count;
 	}
-	
+
 	@Override
 	public String toString() {
 
-		return "[Rectangle with x: " + getX() 
-							+ " y: " + getY() 
-							+ " height: " + getHeight() 
-							+ " width: " + getWidth()
-							+ "]";
+		return "[Rectangle with x: " + getX() + " y: " + getY() + " height: " + getHeight() + " width: " + getWidth()
+				+ "]";
 	}
 
 }

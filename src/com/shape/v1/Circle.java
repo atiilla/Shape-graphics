@@ -39,6 +39,11 @@ public class Circle extends Shape {
 	}
 	
 
+	@Override
+	public String toString() {
+		return "Circle [radius=" + radius + "]";
+	}
+
 	public double getArea() {
 		return radius * radius*3.14;
 	}

@@ -17,8 +17,6 @@ public class Drawing {
 		return isPresent;
 	}
 
-	
-
 	public void add(Shape s) {
 		System.out.println("Adding a shape");
 		if (!isPresent(s)) {
